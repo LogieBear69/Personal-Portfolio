@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>
+    Page Title
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1">
+  <style>
+    body {
+      font-family: "Arial Black",sans-serif;
+    }
+    .header {
+      padding: 80px;
+      text-align: center;
+      background: #222222;
+      color: white;
+    }
+    .header h1 {
+      font-size: 40px;
+    }
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+    .navbar a{
+      float: right;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar p.name {
+      float: left;
+      padding-left: 20px;
+      color: white;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    * {
+      box-sizing: border-box;
+
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .side {
+      flex: 20%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    .main {
+      flex: 40%;
+      background-color: white;
+      padding: 20px;
+    }
+    .side2 {
+      flex: 40%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar p.name {
+        float: none;
+        order: -1;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .main p.title {
+      text-decoration: underline;
+    }
+
+
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      font-size: 14px;
+    }
+    .reviews {
+      padding: 20px;
+      background: #f9f9f9;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class = "navbar">
+  <p class = "name">Your Name</p>
+  <a href="#">Contact</a>
+  <a href="#">Articles</a>
+  <a href="#">Projects</a>
+  <a href="#">Home</a>
+</div>
+<div class = "header">
+  <h1>My Website</h1>
+  <p>A website created by me.</p>
+</div>
+<div class="row">
+  <div class="side">
+    <h2>Projects</h2>
+    <ul>
+      <li>Java Number Guessing Game</li>
+      <p> </p>
+      <li>HTML and CSS Personal Portfolio</li>
+      <p> </p>
+      <li>Java Space Invaders</li>
+    </ul>
+  </div>
+  <div class="main">
+    <h2>Work Experience</h2>
+    <p class = "title">Roadmap.sh</p>
+    <p>Solved all the frontend projects</p>
+    <br>
+    <p class="title">OpenSource Work</p>
+    <p>Contributed to 50 open source projects. Made my own projects with 200 Github Stars.</p>
+  </div>
+  <div class="side2">
+    <h2>Education</h2>
+    <p>Graduated with 3.76 out of 4 GPA. Won Nobel Prize. Organized 30 Computer Science tutoring sessions.</p>
+    <br>
+    <p>Course I took:</p>
+    <ul>
+      <li>Object Oriented Programming</li>
+      <li>Data Structures and Algorithms</li>
+      <li>Web Engineering</li>
+      <li>Artificial Intelligence</li>
+      <li>Human Computer Interaction</li>
+      <li>Computer Graphics</li>
+      <li>Database Management Systems</li>
+      <li>Calculus 3</li>
+      <li>Discrete Mathematics</li>
+    </ul>
+  </div>
+</div>
+<div class="reviews">
+  <h2>Reviews from my teachers</h2>
+
+</div>
+<div class="footer">
+  <h2> (c) All Rights Reserved 2025</h2>
+</div>
+</body>
+</html>
